@@ -4,15 +4,16 @@ let button = document.getElementById("btn");
 
 let headingValue = document.getElementById("heading");
 
-let resultBody = document.getElementById("multiply_div");
+let resultBody = document.getElementById("multiply-div");
 
-let reset = document.getElementById("btn_reset");
+let reset = document.getElementById("btn-reset");
 
 let count = 0;
 
-const executeFunc = () => {
-    
 
+// Multiplication functionality
+
+const executeFunc = () => {
 
   if (userNumber.value <= -1 || userNumber.value >= 1) {
     count++;
@@ -31,7 +32,7 @@ const executeFunc = () => {
 
         let pTag = document.createElement("p");
 
-        pTag.classList.add("p_tag_body");
+        pTag.classList.add("p-tag--body");
 
         pTag.innerHTML = `${userNumber.value} X ${i} = ${result}`;
 
@@ -44,6 +45,8 @@ const executeFunc = () => {
     userNumber.value = "";
 
     reset.style.display = "block";
+
+    // Reset functionality
 
     reset.addEventListener("click", () => {
       userNumber.value = "";
@@ -59,5 +62,7 @@ const executeFunc = () => {
     reset.style.display = "none";
   }
 };
+
+// Multiplication functionality execute
 
 button.addEventListener("click", executeFunc);
