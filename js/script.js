@@ -11,7 +11,7 @@ let reset = document.getElementById("btn-reset");
 let count = 0;
 
 
-// Multiplication functionality
+// Multiplication Functionality
 
 const executeFunc = () => {
 
@@ -46,7 +46,7 @@ const executeFunc = () => {
 
     reset.style.display = "block";
 
-    // Reset functionality
+    // Reset Functionality
 
     reset.addEventListener("click", () => {
       userNumber.value = "";
@@ -63,6 +63,6 @@ const executeFunc = () => {
   }
 };
 
-// Multiplication functionality execute
+// Multiplication Functionality Execute
 
 button.addEventListener("click", executeFunc);

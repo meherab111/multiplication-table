@@ -32,6 +32,7 @@ input {
   padding: 1rem 1.5rem;
 }
 
+
 #btn {
   margin-block: 1rem;
   font-size: 2rem;
@@ -132,9 +133,8 @@ input {
   #btn {
     font-size: 1.5rem;
     padding: 0.5rem 1.5rem;
-
   }
-  
+
   #btn-reset {
     font-size: 1.1rem;
     padding: 0.8rem 2.1rem;
@@ -143,6 +143,7 @@ input {
     font-size: 1.2rem;
   }
 }
+
 @media (max-width: 30em) {
   input {
     font-size: 1rem;
